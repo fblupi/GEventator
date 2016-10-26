@@ -16,9 +16,15 @@ La idea es desarrollar un software para facilitar toda esta gestión y que sea a
 
 ## Tecnología utilizada
 
+### Arquitectura
+
+Se utilizará una arquitectura basada en microservicios, la cual se caracteriza por usar servicios desplegados independiente y que funcionan también independientemente unos de otros.
+
+El núcleo de esta arquitecutra es una API REST programada en [Flask](http://flask.pocoo.org/).
+
 ### Back-end
 
-Se utilizará [Django](https://www.djangoproject.com/) como framework para desarrollar el back-end junto con una base de datos.
+Se utilizará [Flask](http://flask.pocoo.org/) como framework para desarrollar el back-end junto con una base de datos [MongoDB](https://www.mongodb.com/).
 
 ### Front-end
 

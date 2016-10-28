@@ -22,13 +22,25 @@ Se utilizará una arquitectura basada en microservicios, la cual se caracteriza 
 
 El núcleo de esta arquitecutra es una API REST programada en [Flask](http://flask.pocoo.org/).
 
+#### Microservicios
+
+Se podrían tener tres microservicios actuando de forma independiente los unos con los otros (correspondientes a cada uno de los módulos de la aplicación):
+
+- Gestión económica
+- Gestión de inventario
+- Gestión de actividades
+
+Cada uno de estos con su correspondiente base de datos.
+
+![img/microservicios.png](img/microservicios.png)
+
 ### Back-end
 
-Se utilizará [Flask](http://flask.pocoo.org/) como framework para desarrollar el back-end junto con una base de datos [MongoDB](https://www.mongodb.com/).
+Se utilizará [Flask](http://flask.pocoo.org/) como framework para desarrollar el back-end (tanto la API REST como los distintos microservicios) junto con varias bases de datos [MongoDB](https://www.mongodb.com/).
 
 ### Front-end
 
-En el front-end se usara HTML, CSS y JavaScript usando [Materialize](http://materializecss.com/) como framework.
+Si se llega a desarrollar el front-end, se usará HTML, CSS y JavaScript usando [Materialize](http://materializecss.com/) como framework.
 
 ## Licencia
 

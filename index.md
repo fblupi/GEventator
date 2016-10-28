@@ -32,7 +32,7 @@ Se podrían tener tres microservicios actuando de forma independiente los unos c
 
 Cada uno de estos con su correspondiente base de datos.
 
-![img/microservicios.png](img/microservicios.png)
+<img src="img/microservicios.png" alt="arquitectura de microservicios"/>
 
 ### Back-end
 

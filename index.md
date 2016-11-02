@@ -32,7 +32,7 @@ Se podrían tener tres microservicios actuando de forma independiente los unos c
 
 Cada uno de estos con su correspondiente base de datos.
 
-!["arquitectura de microservicios"](img/microservicios.png)
+!["arquitectura de microservicios"](https://github.com/fblupi/GEventator/raw/gh-pages/img/microservicios.png)
 
 ### Back-end
 

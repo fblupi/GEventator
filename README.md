@@ -38,6 +38,27 @@ Se utilizará [Flask](http://flask.pocoo.org/) como framework para desarrollar e
 
 Si se llega a desarrollar el front-end, se usará HTML, CSS y JavaScript usando [Materialize](http://materializecss.com/) como framework.
 
+## API REST
+
+| Ruta | Método | Descripción |
+|:-:|:-:|:-:|
+| /user | GET | Lista todos los usuarios |
+| /user | POST | Añade a un nuevo usuario |
+| /user/&lt;user> | GET | Datos de un usuario |
+| /user/&lt;user&gt; | PUT | Edita un usuario |
+| /user/&lt;user&gt;/event | GET | Lista todos los eventos que organiza un usuario |
+| /event | GET |&gt;Lista todos los eventos |
+| /event | POST | Añade un nuevo evento |
+| /event/&lt;event&gt; | GET | Datos de un evento |
+| /event/&lt;event&gt; | PUT | Edita un evento |
+| /event/&lt;event&gt;/organizer | GET | Lista todos los organizadores de un evento |
+| /event/&lt;event&gt;/organizer/&lt;user&gt; | POST | Añade un nuevo organizador a un evento |
+| /event/&lt;event&gt;/organizer/&lt;user&gt; | DELETE | Eliminar un organizador de un evento |
+| /event/&lt;event&gt;/transaction | GET | Lista todas las transacciones de un evento |
+| /event/&lt;event&gt;/transaction | POST | Añade una nueva transacción a un evento |
+| /event/&lt;event&gt;/transaction/&lt;transaction&gt; | GET | Datos de una transacción |
+| /event/&lt;event&gt;/transaction/&lt;transaction&gt; | DELETE | Eliminar una transacción de un evento |
+
 ## Licencia
 
 El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).

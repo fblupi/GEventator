@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request
 from flask_pymongo import PyMongo, ObjectId
-import datetime
 
 app = Flask(__name__)
 
@@ -21,7 +20,7 @@ def get_events():
 
 @app.route('/event', methods=['POST'])
 def add_event():
-    user = 'lalala'
+    user = '58208f5dcec8de0e27f0ce0e'
     name = request.json['name']
     description = request.json['description']
     location = request.json['location']
@@ -68,21 +67,6 @@ def edit_event(event):
         output = "No such event"
         return jsonify({'result' : output}), 404
 
-@app.route('/event/<event>', methods=['DELETE'])
-def delete_event(event):
-    events = mongo.db.events
-    e = events.find_one({'_id' : ObjectId(event)})
-    if e:
-        output = {'_id' : str(ObjectId(e['_id'])), 'name' : e['name'], 'description' : e['description'], 'location' : e['location'], 'start_date' : e['start_date'], 'finish_date' : e['finish_date']}
-        events.delete_one(e)
-        organizers = mongo.db.organizers
-        for o in organizers.find({'event' : _id}):
-            organizers.delete_one(o)
-        return jsonify({'result' : output}), 200
-    else:
-        output = "No such event"
-        return jsonify({'result' : output}), 404
-
 @app.route('/event/<event>/organizer', methods=['GET'])
 def get_organizers(event):
     organizers = mongo.db.organizers
@@ -111,7 +95,7 @@ def delete_organizer(event, user):
         output = "No such event"
         return jsonify({'result' : output}), 404
 
-@app.route('/user/<user>/event/', methods=['GET'])
+@app.route('/user/<user>/event', methods=['GET'])
 def get_user_events(user):
     organizers = mongo.db.organizers
     output = []

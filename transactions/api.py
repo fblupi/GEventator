@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_pymongo import PyMongo, ObjectId
+import datetime
 
 app = Flask(__name__)
 
@@ -24,7 +25,7 @@ def add_transaction(event):
     description = request.json['description']
     quantity = request.json['quantity']
     price = request.json['price']
-    kind = request.json['kind'] # deposit, expense, investment
+    kind = request.json['kind'] # deposit, expense
     if kind != "deposit" and kind != "expense" and kind != "investment":
         output = "Invalid kind of transaction"
         return jsonify({'result' : output}), 400

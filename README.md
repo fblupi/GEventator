@@ -47,7 +47,7 @@ Si se llega a desarrollar el front-end, se usará HTML, CSS y JavaScript usando 
 | /user/&lt;user> | GET | Datos de un usuario |
 | /user/&lt;user&gt; | PUT | Edita un usuario |
 | /user/&lt;user&gt;/event | GET | Lista todos los eventos que organiza un usuario |
-| /event | GET |&gt;Lista todos los eventos |
+| /event | GET | Lista todos los eventos |
 | /event | POST | Añade un nuevo evento |
 | /event/&lt;event&gt; | GET | Datos de un evento |
 | /event/&lt;event&gt; | PUT | Edita un evento |
@@ -61,4 +61,4 @@ Si se llega a desarrollar el front-end, se usará HTML, CSS y JavaScript usando 
 
 ## Licencia
 
-El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).
+El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/GEventator/blob/master/LICENSE).

@@ -42,6 +42,18 @@ Se utilizará [Flask](http://flask.pocoo.org/) como framework para desarrollar e
 
 Si se llega a desarrollar el front-end, se usará HTML, CSS y JavaScript usando [Materialize](http://materializecss.com/) como framework.
 
+## Provisionamiento
+
+Para desplegar el sistema en la nube se va a utilizar una imagen Ubuntu Server 14.04 en AWS (Amazon Web Services). Se elige AWS porque al ser estudiantes de universidad tenemos acceso gratuito a una máquina virtual básica y se elige Ubuntu Server 14.04 porque es una distribución Linux muy utilizada y cuenta con Python 2.7 instalado por defecto, el cual es necesario para ejecutar Ansible.
+
+### Ansible
+
+Se ha elegido Ansible por las siguientes dos razones:
+* El sistema se va a desarrollar en Python y Ansible funciona sobre Python, el cual está instalado por defecto en la mayoría de las imágenes.
+* Tras haber probado varios antes, me ha parecido el más sencillo de entender y utilizar.
+
+Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Ansible hay que seguir las instrucciones detalladas [aquí](provision/Ansible/README.md). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
+
 ## Licencia
 
 El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).

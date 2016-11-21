@@ -22,9 +22,9 @@ El núcleo de esta arquitecutra es una API REST programada en [Flask](http://fla
 
 Se podrían tener tres microservicios actuando de forma independiente los unos con los otros (correspondientes a cada uno de los módulos de la aplicación):
 
-- Gestión económica
-- Gestión de inventario
-- Gestión de actividades
+- Gestión de usuarios
+- Gestión de eventos
+- Gestión de usuarios
 
 Cada uno de estos con su correspondiente base de datos.
 

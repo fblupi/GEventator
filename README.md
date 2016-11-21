@@ -24,7 +24,7 @@ Se podrían tener tres microservicios actuando de forma independiente los unos c
 
 - Gestión de usuarios
 - Gestión de eventos
-- Gestión de usuarios
+- Gestión de transacciones
 
 Cada uno de estos con su correspondiente base de datos.
 

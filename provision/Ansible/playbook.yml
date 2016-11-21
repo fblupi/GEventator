@@ -1,0 +1,17 @@
+- hosts: all
+  sudo: true
+  tasks:
+  - name: Actualizar cache
+    apt: update_cache=yes
+  - name: Instalar Git
+    apt: name=git state=present
+  - name: Instalar MongoDB
+    apt: name=mongodb state=present
+  - name: Instalar Pip
+    apt: name=python-setuptools state=present
+    apt: name=python-dev state=present
+    apt: name=python-pip state=present
+  - name: Instalar Flask
+    pip: name=Flask
+  - name: Instalar Flask-PyMongo
+    pip: name=Flask-PyMongo

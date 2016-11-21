@@ -1,0 +1,2 @@
+[aws]
+X.X.X.X ansible_ssh_user='ubuntu'

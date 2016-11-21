@@ -49,11 +49,10 @@ Para desplegar el sistema en la nube se va a utilizar una imagen Ubuntu Server 1
 ### Ansible
 
 Se ha elegido Ansible por las siguientes dos razones:
+* El sistema se va a desarrollar en Python y Ansible funciona sobre Python, el cual está instalado por defecto en la mayoría de las imágenes.
+* Tras haber probado varios antes, me ha parecido el más sencillo de entender y utilizar.
 
-- El sistema se va a desarrollar en Python y Ansible funciona sobre Python, el cual está instalado por defecto en la mayoría de las imágenes.
-- Tras haber probado varios antes, me ha parecido el más sencillo de entender y utilizar.
-
-Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Ansible hay que seguir las instrucciones detalladas [aquí](provision#ansible). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
+Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Ansible hay que seguir las instrucciones detalladas [aquí](provision/Ansible/README.md). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
 
 ## Licencia
 

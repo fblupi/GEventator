@@ -1,15 +1,14 @@
-include_recipe 'python'
-include_recipe "python::pip"
+apt_update 'all platforms'
 
 package 'mongodb'
 package 'python-setuptools'
 package 'python-dev'
 package 'python-pip'
 
-python_pip 'Flask' do
-  action :install
+execute 'Flask' do
+  command 'pip install Flask'
 end
 
-python_pip 'Flask-PyMongo' do
-  action :install
+execute 'Flask-PyMongo' do
+  command 'pip install Flask-PyMongo'
 end

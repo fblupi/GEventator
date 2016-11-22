@@ -21,5 +21,5 @@ git clone https://github.com/fblupi/GEventator.git
 Provisionar con chef-solo:
 
 ```
-sudo chef-solo -c GEventator/provsion/Chef/chef/solo.rb
+sudo chef-solo -c GEventator/provision/Chef/chef/solo.rb
 ```

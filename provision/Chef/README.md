@@ -23,3 +23,5 @@ Provisionar con chef-solo:
 ```
 sudo chef-solo -c GEventator/provision/Chef/chef/solo.rb
 ```
+
+!["salida esperada chef"](https://fblupi.github.io/GEventator/img/chef-working.png "salida esperada chef")

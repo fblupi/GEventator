@@ -7,3 +7,5 @@ Ejecutar la orden:
 ```
 ansible-playbook -i ansible_hosts --private-key key.pem -b playbook.yml
 ```
+
+!["salida esperada ansible"](https://fblupi.github.io/GEventator/img/ansible-working.png "salida esperada ansible")

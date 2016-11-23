@@ -61,7 +61,7 @@ Como alternativa a Ansible, se puede provisionar en Chef. Se ha elegido esta seg
 
 Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Chef hay que seguir las instrucciones detalladas [aquí](provision#chef). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
 
-### Probar el de otros compañerrores
+### Probar el de otros compañeros
 
 Se han probado los provisionamientos de [@acasadoquijada](provision-otros#acasadoquijada) y [@Griger](provision-otros#griger) sin encontrar ningún fallo. Hacer click en cada uno de ellos para ver las capturas de sus sistemas de provisionamiento funcionando.
 

@@ -20,6 +20,12 @@ layout: index
 
 !["Griger ansible"](https://cloud.githubusercontent.com/assets/6973564/20556799/062954a6-b169-11e6-9dc4-66a5daf056f7.png "Griger ansible")
 
+#### Chef
+
+[Enlace a su issue](https://github.com/Griger/CC/issues/7#issuecomment-262474571).
+
+!["Griger chef"](https://cloud.githubusercontent.com/assets/6973564/20557714/ed5dbefe-b16c-11e6-807d-186b517d717c.png "Griger chef")
+
 ---
 
 Volver a [home](index)

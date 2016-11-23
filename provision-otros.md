@@ -12,6 +12,12 @@ layout: index
 
 !["acasadoquijada ansible"](https://cloud.githubusercontent.com/assets/6973564/20556072/a14308c8-b165-11e6-8b9a-9403c4728b68.png "acasadoquijada ansible")
 
+#### Puppet
+
+[Enlace a su issue](https://github.com/acasadoquijada/MyStudentBot/issues/14#issuecomment-262564608).
+
+!["acasadoquijada puppet"](https://cloud.githubusercontent.com/assets/6973564/20570104/9fbf72e2-b1a2-11e6-8fda-77bf23eb78de.png "acasadoquijada puppet")
+
 ### Griger
 
 #### Ansible

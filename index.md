@@ -53,13 +53,17 @@ Se ha elegido Ansible por las siguientes dos razones:
 - El sistema se va a desarrollar en Python y Ansible funciona sobre Python, el cual está instalado por defecto en la mayoría de las imágenes.
 - Tras haber probado varios antes, me ha parecido el más sencillo de entender y utilizar.
 
-Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Ansible hay que seguir las instrucciones detalladas [aquí](provision/Ansible/README.md). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
+Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Ansible hay que seguir las instrucciones detalladas [aquí](provision#ansible). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
 
 ### Chef
 
 Como alternativa a Ansible, se puede provisionar en Chef. Se ha elegido esta segunda opción porque es una de las más utilizadas actualmente y porque durante las pruebas que se realizaron resultó, al igual que Ansible bastante sencillo, pese a lo tedioso que puede resultar en un principio el sistema de directorio que necesita.
 
-Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Chef hay que seguir las instrucciones detalladas [aquí](provision/Chef/README.md). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
+Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Chef hay que seguir las instrucciones detalladas [aquí](provision#chef). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
+
+### Probar el de otros compañerrores
+
+Se han probado los provisionamientos de [@acasadoquijada](provision-otros#acasadoquijada) y [@Griger](provision-otros#griger) sin encontrar ningún fallo. Hacer click en cada uno de ellos para ver las capturas de sus sistemas de provisionamiento funcionando.
 
 ## Licencia
 

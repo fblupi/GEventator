@@ -6,7 +6,7 @@ layout: index
 
 ## Vagrant-AWS-Ansible
 
-En primer lugar, hay que crearse un usuario en AWS, para ello, seguir los pasos de este tutorial: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
+En primer lugar, hay que crearse un usuario en AWS, para ello, seguir los pasos de este tutorial: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html y crear un grupo de seguridad con nombre *vagrant* y con los puertos HTTP, HTTPS y SSH abiertos.
 
 Una vez hecho, recoger los datos necesarios para editar el fichero `aws-credentials`.
 

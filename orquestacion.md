@@ -45,3 +45,7 @@ vagrant ssh events
 El resultado de salida tiene que ser similar al siguiente:
 
 !["salida esperada vagrant"](img/vagrant-working.png "salida esperada vagrant")
+
+---
+
+Volver a [home](index)

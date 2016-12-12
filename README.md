@@ -48,6 +48,10 @@ Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 
 
 Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 usando Chef hay que seguir las instrucciones detalladas [aquí](provision/Chef/README.md). Con esto se instalará: Git, MongoDB, pip y usando pip: Flask y Flask-PyMongo.
 
+## Orquestación
+
+Para orquestar máquinas virtuales se ha utilizado Vagrant. Estas máquinas virtuales son las mismas que se usaron en el apartado de provisionamiento (la AMI de Ubuntu Server 14.04 de AWS) y como sistem de provisionamiento Ansible. Las instrucciones detalladas se encuentran [aquí](orquestacion/README.md).
+
 ## Licencia
 
 El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).

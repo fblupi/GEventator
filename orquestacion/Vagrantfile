@@ -1,20 +1,46 @@
 # Vagrantfile
 Vagrant.configure(2) do |config|
-	config.vm.provider :aws do |aws, override|
-		aws.access_key_id = ENV['AWS_KEY']
-		aws.secret_access_key = ENV['AWS_SECRET']
-		aws.keypair_name = ENV['AWS_KEYNAME']
 
-		aws.ami = "ami-01f05461"
-		aws.region = "us-west-2"
-		aws.instance_type = "t2.micro"
-		aws.security_groups = ["vagrant"]
+	config.vm.define :users do |users|
+		users.vm.host_name = "users"
+		users.vm.provider :aws do |aws, override|
+			aws.access_key_id = ENV['AWS_KEY']
+			aws.secret_access_key = ENV['AWS_SECRET']
+			aws.keypair_name = ENV['AWS_KEYNAME']
 
-		override.vm.box = "dummy"
-		override.ssh.username = "ubuntu"
-		override.ssh.private_key_path = ENV['AWS_KEYPATH']
+			aws.ami = "ami-01f05461"
+			aws.region = "us-west-2"
+			aws.instance_type = "t2.micro"
+			aws.security_groups = ["vagrant"]
+
+			override.vm.box = "dummy"
+			override.ssh.username = "ubuntu"
+			override.ssh.private_key_path = ENV['AWS_KEYPATH']
+		end
+		users.vm.provision "ansible" do |ansible|
+			ansible.playbook = "playbook.yml"
+		end
 	end
-	config.vm.provision "ansible" do |ansible|
-		ansible.playbook = "playbook.yml"
+
+	config.vm.define :events do |events|
+		events.vm.host_name = "events"
+		events.vm.provider :aws do |aws, override|
+			aws.access_key_id = ENV['AWS_KEY']
+			aws.secret_access_key = ENV['AWS_SECRET']
+			aws.keypair_name = ENV['AWS_KEYNAME']
+
+			aws.ami = "ami-01f05461"
+			aws.region = "us-west-2"
+			aws.instance_type = "t2.micro"
+			aws.security_groups = ["vagrant"]
+
+			override.vm.box = "dummy"
+			override.ssh.username = "ubuntu"
+			override.ssh.private_key_path = ENV['AWS_KEYPATH']
+		end
+		events.vm.provision "ansible" do |ansible|
+			ansible.playbook = "playbook.yml"
+		end
 	end
+
 end

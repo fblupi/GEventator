@@ -21,7 +21,7 @@ source aws-credentials
 Y finalmente para levantar ambas máquinas virtuales:
 
 ```
-vagrant up --provider=aws-credentials
+vagrant up --provider=aws
 ```
 
 Para conectarse a cualquiera de las dos máquinas usar:

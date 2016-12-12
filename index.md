@@ -65,6 +65,12 @@ Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 
 
 Se han probado los provisionamientos de [@acasadoquijada](provision-otros#acasadoquijada) y [@Griger](provision-otros#griger) sin encontrar ningún fallo. Hacer click en cada uno de ellos para ver las capturas de sus sistemas de provisionamiento funcionando.
 
+## Orquestación
+
+### Vagrant
+
+Para orquestar máquinas virtuales se ha utilizado Vagrant. Estas máquinas virtuales son las mismas que se usaron en el apartado de provisionamiento (la AMI de Ubuntu Server 14.04 de AWS) y como sistem de provisionamiento Ansible. Las instrucciones detalladas se encuentran [aquí](orquestacion).
+
 ## Licencia
 
 El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).

@@ -52,6 +52,10 @@ Para provisionar una máquina virtual AWS con una imagen de Ubuntu Server 14.04 
 
 Para orquestar máquinas virtuales se ha utilizado Vagrant. Estas máquinas virtuales son las mismas que se usaron en el apartado de provisionamiento (la AMI de Ubuntu Server 14.04 de AWS) y como sistem de provisionamiento Ansible. Las instrucciones detalladas se encuentran [aquí](orquestacion/README.md).
 
+## Contenedores
+
+Se usa Docker para el uso de contenedores. Las instrucciones para instalarlo están [aquí](contenedores/README.md). Asímismo se ha creado un repositorio en [Docker Hub](https://hub.docker.com/r/fblupi/geventator/) que se actualiza cada vez que se actualiza este repositorio en GitHub.
+
 ## Licencia
 
 El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).

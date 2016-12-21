@@ -16,9 +16,9 @@ sudo apt-get install docker-engine
 sudo service docker start
 ```
 
-Ejecutar la orden:
+Ejecutar las órdenes para instalarlo desde el repositorio en Docker Hub:
 
 ```
 sudo service docker restart
-sudo docker build -t fblupi/geventator -f Dockerfile .
+sudo docker pull fblupi/geventator
 ```

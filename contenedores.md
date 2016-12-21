@@ -1,4 +1,10 @@
-### Docker
+---
+layout: index
+---
+
+# GEventator
+
+## Docker
 
 Instalar Docker en la máquina local:
 

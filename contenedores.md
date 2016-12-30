@@ -1,4 +1,4 @@
----
+--
 layout: index
 ---
 
@@ -28,3 +28,13 @@ Ejecutar las órdenes para instalarlo desde el repositorio en Docker Hub:
 sudo service docker restart
 sudo docker pull fblupi/geventator
 ```
+
+Para conectarse a una consola usar:
+
+```
+sudo docker run -it fblupi/geventator bash
+```
+
+El resultado de salida tiene que ser similar al siguiente:
+
+!["salida esperada docker"](img/docker-working.png "salida esperada docker")

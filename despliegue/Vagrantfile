@@ -1,0 +1,30 @@
+# Vagrantfile
+Vagrant.configure(2) do |config|
+
+	config.vm.define :user do |user|
+		user.vm.host_name = "user"
+		user.vm.provider :aws do |aws, override|
+			aws.access_key_id = ENV['AWS_KEY']
+			aws.secret_access_key = ENV['AWS_SECRET']
+			aws.keypair_name = ENV['AWS_KEYNAME']
+
+			aws.ami = "ami-b7a114d7"
+			aws.region = "us-west-2"
+			aws.instance_type = "t2.micro"
+			aws.security_groups = ["vagrant"]
+
+			aws.tags = {
+				'Name' => 'GEventator - Users'
+			}
+
+			override.vm.box = "dummy"
+			override.ssh.username = "ubuntu"
+			override.ssh.private_key_path = ENV['AWS_KEYPATH']
+		end
+		user.vm.provision "shell", path: "python2.sh"
+		#user.vm.provision "ansible" do |ansible|
+		#	ansible.playbook = "playbook.yml"
+		#end
+	end
+
+end

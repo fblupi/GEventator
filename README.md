@@ -1,5 +1,7 @@
 # GEventator
 
+!["AWS"](https://fblupi.github.io/GEventator/img/tech/aws.png "AWS") !["Ansible"](https://fblupi.github.io/GEventator/img/tech/ansible.png "Ansible") !["Vagrant"](https://fblupi.github.io/GEventator/img/tech/vagrant.png "Vagrant") !["Docker"](https://fblupi.github.io/GEventator/img/tech/docker.png "Docker") !["mLab"](https://fblupi.github.io/GEventator/img/tech/mlab.png "mLab") !["Papertrail"](https://fblupi.github.io/GEventator/img/tech/papertrail.png "Papertrail")
+
 ## Introducción
 
 ### Descripción del problema

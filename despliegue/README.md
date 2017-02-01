@@ -16,7 +16,7 @@ Una vez creada, se puede utilizar el URI que proporciona para conectarse con ell
 
 ##### Papertrail
 
-Se ha utilizado Papertrail como sistema de *logs* ya que ofrecía una cuenta gratuita de hasta 100 MB/mes. Además, su integración con Python es trivial, pues se integra con el paquete de *logging* de Python y [solo habría que añadir la dirección de la cuenta](http://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-python-apps/).
+Se ha utilizado Papertrail como sistema de *logs* ya que ofrecía una cuenta gratuita de hasta 100 MB/mes. Además, su integración con Python es trivial, pues se integra con el paquete de *logging* de Python y [solo habría que añadir la dirección de la cuenta](http://help.papertrailapp.com/kb/configuration/configuring-centralized-logging-from-python-apps/) a diferencia de otros servicios como [Logz.io](http://logz.io/) que para integrarlo con Python hace falta instalar un paquete que no está disponible para Python3 (la versión que utiliza GEventator).
 
 #### Provisionamiento
 

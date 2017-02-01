@@ -56,6 +56,19 @@ Para orquestar máquinas virtuales se ha utilizado Vagrant. Estas máquinas virt
 
 Se usa Docker para el uso de contenedores. Las instrucciones para instalarlo están [aquí](contenedores/README.md). Asímismo se ha creado un repositorio en [Docker Hub](https://hub.docker.com/r/fblupi/geventator/) que se actualiza cada vez que se actualiza este repositorio en GitHub.
 
+## Despliegue
+
+Para el despliegue final de la aplicación se ha puesto en práctica todo lo visto en la asignatura. Se utiliza:
+
+* AWS (máquinas virtuales Ubuntu 16.04)
+* Ansible (provisionamiento)
+* Vagrant (orquestación)
+* Docker (contenedores)
+* mLab (DaaS)
+* Papertrail (LaaS)
+
+Los detalles de la elección de esta tecnología así como más información se encuentran [aquí](despliegue/README.md).
+
 ## Licencia
 
 El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).

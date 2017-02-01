@@ -4,6 +4,8 @@ layout: index
 
 # GEventator
 
+!["AWS"](img/tech/aws.png "AWS") !["Ansible"](img/tech/ansible.png "Ansible") !["Vagrant"](img/tech/vagrant.png "Vagrant") !["Docker"](img/tech/docker.png "Docker") !["mLab"](img/tech/mlab.png "mLab") !["Papertrail"](img/tech/papertrail.png "Papertrail")
+
 ## Introducción
 
 ### Descripción del problema

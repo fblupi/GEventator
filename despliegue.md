@@ -42,6 +42,6 @@ Se ha creado un [contenedor con todos los paquetes utilizados por la aplicación
 
 ### Ejecución
 
-Las instrucciones para desplegar con Vagrant se tienen en el capítulo de [orquestación](orquestacion.md). Una vez se han desplegado las máquinas virtuales se puede acceder con `vagrant ssh <nombre>` siendo *<nombre>* la máquina virtual a la que se desea acceder (*user*, *event* o *transaction*):
+Las instrucciones para desplegar con Vagrant se tienen en el capítulo de [orquestación](orquestacion.md). Una vez se han desplegado las máquinas virtuales se puede acceder con `vagrant ssh <nombre>` siendo *nombre* la máquina virtual a la que se desea acceder: *user*, *event* o *transaction*:
 
 !["salida esperada despliegue"](img/deployment-working.png "salida esperada despliegue")

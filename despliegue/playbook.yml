@@ -1,0 +1,21 @@
+- hosts: all
+  sudo: true
+  tasks:
+  - name: Instalar paquetes extra de imágenes
+    apt: name=linux-image-extra-4.4.0-53-generic
+    apt: name=linux-image-extra-virtual
+  - name: Instalar curl
+    apt: name=curl
+  - name: Instalar certificados apt https
+    apt: name=apt-transport-https
+    apt: name=ca-certificates
+  - name: Agregar clave oficial de docker
+    shell: curl -fsSL https://yum.dockerproject.org/gpg | apt-key add -
+  - name: Agregar repositorio estable
+    shell: add-apt-repository "deb https://apt.dockerproject.org/repo/ ubuntu-xenial  main"
+  - name: Actualizar cache
+    apt: update_cache=yes
+  - name: Instalar docker engine
+    apt: name=docker-engine
+  - name: Descargar contenedor
+    shell: docker pull fblupi/alpine-flask-mongo
